@@ -1,0 +1,51 @@
+<div class="flex justify-center">
+  <div
+    class="h-[450px] w-full bg-no-repeat bg-cover bg-center shadow-2xl"
+    [style.background-image]="
+      getImageUrls(detailsService.movieDetails$()?.backdrop_path)
+    "
+  ></div>
+</div>
+<div>
+  <h2 class="font-bold text-3xl underline">
+    {{ detailsService.movieDetails$()?.title }}
+  </h2>
+  <h3 class="font-bold text-xl">
+    {{ detailsService.movieDetails$()?.tagline }}
+  </h3>
+  <div class="flex justify-between mt-4">
+    <div>
+      <span class="font-bold">Rating:</span>
+      {{ detailsService.movieDetails$()?.vote_average }}
+    </div>
+    <div>
+      {{ detailsService.movieDetails$()?.original_language }} /
+      {{ detailsService.movieDetails$()?.runtime }}min /
+      {{ detailsService.movieDetails$()?.release_date }}
+    </div>
+  </div>
+  <div class="flex">
+    <span class="mr-2 font-bold">Genres:</span>
+    @for (genre of detailsService.movieDetails$()?.genres; track genre?.id) {
+      <div class="mr-2">-{{ genre?.name }}</div>
+    }
+  </div>
+  <div class="my-4">
+    <span class="font-bold">Overview:</span>
+    <div>
+      {{ detailsService.movieDetails$()?.overview }}
+    </div>
+  </div>
+  <a target="_blank" class="mr-4 font-bold" [href]="">TAILER</a>
+  <a
+    target="_blank"
+    class="font-bold"
+    [href]="detailsService.movieDetails$()?.homepage"
+    >HOMEPAGE</a
+  >
+</div>
+
+<h2 class="font-bold underline text-3xl my-4">RECOMMENDED</h2>
+<app-movie-list
+  [movieList]="detailsService.recommendedMovieList$()"
+></app-movie-list>
