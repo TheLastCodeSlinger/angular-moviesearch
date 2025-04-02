@@ -1,0 +1,384 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 1339252,
+          "original_language": "en",
+          "original_title": "Harry",
+          "overview": "Leo realizes that there is no place like home.",
+          "popularity": 1.857,
+          "poster_path": null,
+          "release_date": "2024-01-03",
+          "title": "Harry",
+          "video": false,
+          "vote_average": 5.824,
+          "vote_count": 51
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 671,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Philosopher's Stone",
+          "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+          "popularity": 3.626,
+          "poster_path": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+          "release_date": "2001-11-16",
+          "title": "Harry Potter and the Philosopher's Stone",
+          "video": false,
+          "vote_average": 7.902,
+          "vote_count": 28031
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/htmYEfH7TQgzsXHCnNXxmoYKQtL.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 673,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Prisoner of Azkaban",
+          "overview": "Year three at Hogwarts means new fun and challenges as Harry learns the delicate art of approaching a Hippogriff, transforming shape-shifting Boggarts into hilarity and even turning back time. But the term also brings danger: soul-sucking Dementors hover over the school, an ally of the accursed He-Who-Cannot-Be-Named lurks within the castle walls, and fearsome wizard Sirius Black escapes Azkaban. And Harry will confront them all.",
+          "popularity": 4.355,
+          "poster_path": "/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+          "release_date": "2004-05-31",
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "video": false,
+          "vote_average": 8.011,
+          "vote_count": 21970
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/yHzyPJrVqlTySQ9mc379yxrLBYQ.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 672,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Chamber of Secrets",
+          "overview": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.",
+          "popularity": 4.596,
+          "poster_path": "/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+          "release_date": "2002-11-13",
+          "title": "Harry Potter and the Chamber of Secrets",
+          "video": false,
+          "vote_average": 7.709,
+          "vote_count": 22389
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/5rrGVmRUuCKVbqUu41XIWTXJmNA.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 674,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Goblet of Fire",
+          "overview": "When Harry Potter's name emerges from the Goblet of Fire, he becomes a competitor in a grueling battle for glory among three wizarding schools—the Triwizard Tournament. But since Harry never submitted his name for the Tournament, who did? Now Harry must confront a deadly dragon, fierce water demons and an enchanted maze only to find himself in the cruel grasp of He Who Must Not Be Named.",
+          "popularity": 4.344,
+          "poster_path": "/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+          "release_date": "2005-11-16",
+          "title": "Harry Potter and the Goblet of Fire",
+          "video": false,
+          "vote_average": 7.802,
+          "vote_count": 21051
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/82a7AGF081PzFfoM8GAVGMvZNYK.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 675,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Order of the Phoenix",
+          "overview": "Returning for his fifth year of study at Hogwarts, Harry is stunned to find that his warnings about the return of Lord Voldemort have been ignored. Left with no choice, Harry takes matters into his own hands, training a small group of students to defend themselves against the dark arts.",
+          "popularity": 4.347,
+          "poster_path": "/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg",
+          "release_date": "2007-07-08",
+          "title": "Harry Potter and the Order of the Phoenix",
+          "video": false,
+          "vote_average": 7.675,
+          "vote_count": 19767
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/mgNMFGVUezUAgOPJ57N2toQ7d6z.jpg",
+          "genre_ids": [
+              18,
+              35,
+              9648
+          ],
+          "id": 47943,
+          "original_language": "fr",
+          "original_title": "Harry, un ami qui vous veut du bien",
+          "overview": "Harry knew Michel in high school; they meet again by accident, Harry inserts himself in Michel's life... and things take a sinister turn.",
+          "popularity": 3.825,
+          "poster_path": "/dZV9UTyHJ4LD4ntWudWyqBNhb8I.jpg",
+          "release_date": "2000-08-15",
+          "title": "With a Friend Like Harry...",
+          "video": false,
+          "vote_average": 6.832,
+          "vote_count": 256
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/5IgJfMTy2C8DKUC38WxBdvPlJ1K.jpg",
+          "genre_ids": [
+              35,
+              80
+          ],
+          "id": 24666,
+          "original_language": "no",
+          "original_title": "Olsenbanden og Dynamitt-Harry",
+          "overview": "A foreign criminal gang makes a large-scale bank coup. The suspicion falls on the Olsen Gang. They escape, take up the hunt for the real criminals and thus it all starts. The police are looking for the Olsen Gang, and they are looking for the real criminals.",
+          "popularity": 1.024,
+          "poster_path": "/4p9CkT5yReMwP9HYWBiR1Rmjha0.jpg",
+          "release_date": "1970-08-10",
+          "title": "The Olsen Gang and Dynamite-Harry",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 29
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/7pZtTbxn8d6Blgcf4EUysdEu3bO.jpg",
+          "genre_ids": [
+              53,
+              80,
+              18,
+              28
+          ],
+          "id": 25941,
+          "original_language": "en",
+          "original_title": "Harry Brown",
+          "overview": "An elderly ex-serviceman and widower looks to avenge his best friend's murder by doling out his own form of justice.",
+          "popularity": 3.532,
+          "poster_path": "/lk9qVzvPHuL2vX9ixNut9n0KfYD.jpg",
+          "release_date": "2009-11-11",
+          "title": "Harry Brown",
+          "video": false,
+          "vote_average": 6.813,
+          "vote_count": 1080
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/g8dafKwLfaueQ5GK0qjKTkRCBAA.jpg",
+          "genre_ids": [
+              99
+          ],
+          "id": 899082,
+          "original_language": "en",
+          "original_title": "Harry Potter 20th Anniversary: Return to Hogwarts",
+          "overview": "An enchanting making-of story told through all-new in-depth interviews and cast conversations, inviting fans on a magical first-person journey through one of the most beloved film franchises of all time.",
+          "popularity": 3.554,
+          "poster_path": "/jntLBq0MLR3hrwKaTQswxACRPMs.jpg",
+          "release_date": "2022-01-01",
+          "title": "Harry Potter 20th Anniversary: Return to Hogwarts",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 3389
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/n5A7brJCjejceZmHyujwUTVgQNC.jpg",
+          "genre_ids": [
+              14,
+              12
+          ],
+          "id": 12445,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+          "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+          "popularity": 4.103,
+          "poster_path": "/c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
+          "release_date": "2011-07-12",
+          "title": "Harry Potter and the Deathly Hallows: Part 2",
+          "video": false,
+          "vote_average": 8.088,
+          "vote_count": 20888
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/AqLcLsGGTzAjm3pCCq0CZCQrp6m.jpg",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "id": 12444,
+          "original_language": "en",
+          "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+          "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+          "popularity": 4.394,
+          "poster_path": "/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+          "release_date": "2010-11-17",
+          "title": "Harry Potter and the Deathly Hallows: Part 1",
+          "video": false,
+          "vote_average": 7.743,
+          "vote_count": 19368
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/yo7ewOjremUNL4o76nz4w3jgqMX.jpg",
+          "genre_ids": [
+              35,
+              80
+          ],
+          "id": 24670,
+          "original_language": "no",
+          "original_title": "Olsenbanden og Dynamitt-Harry går amok",
+          "overview": "Egon and the gang is about to commit their biggest heist – stealing 6 millions from an undercover operation at a freight company. The money is stored in the most advanced security vault ever constructed, guarded by professional gorillas.",
+          "popularity": 0.53,
+          "poster_path": "/93MQebDUYKTqhIrbIjpti1DHBfg.jpg",
+          "release_date": "1973-11-26",
+          "title": "The Olsen Gang and Dynamite-Harry Goes Wild",
+          "video": false,
+          "vote_average": 7.167,
+          "vote_count": 15
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/nv9P2feeI3CwYKPMgogP2uxSQfO.jpg",
+          "genre_ids": [
+              18
+          ],
+          "id": 443766,
+          "original_language": "sv",
+          "original_title": "Harrys döttrar",
+          "overview": "About two sisters, Marie and Ninni, both are pregnant for the first time. After conducting a joint survey, Ninni's child is found dead.",
+          "popularity": 0.248,
+          "poster_path": "/2tfDyYA99vLmLAzEe6Y81rrzrDW.jpg",
+          "release_date": "2005-10-21",
+          "title": "Harry's Daughters",
+          "video": false,
+          "vote_average": 5.143,
+          "vote_count": 7
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/eaJtH49dlKN2nOAhlRiXJkbXWDy.jpg",
+          "genre_ids": [
+              35,
+              80
+          ],
+          "id": 24694,
+          "original_language": "no",
+          "original_title": "Olsenbanden og Dynamitt-Harry mot nye høyder",
+          "overview": "An unfaithful servant in the Norwegian Petroleum Directorate tries to sell top secret information to German industry leaders. Egon has a plan to earn money on the transaction himself.",
+          "popularity": 0.388,
+          "poster_path": "/yaP44dt0NRr77nR1mwEhGSW3QEx.jpg",
+          "release_date": "1979-09-07",
+          "title": "The Olsen Gang and Dynamite-Harry Towards New Heights",
+          "video": false,
+          "vote_average": 6.955,
+          "vote_count": 11
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/mTIuXIejFrbdFsfCGupl9m0N8Y7.jpg",
+          "genre_ids": [
+              35,
+              80
+          ],
+          "id": 584192,
+          "original_language": "sv",
+          "original_title": "Harry Lund lägger näsan i blöt!",
+          "overview": "Harry Lund is having a bad day. First he gets fired. And then loses his entire fortune at an illegal gambling club. On his way out, he is assaulted and drugged by unknown men, and wakes up in a car with another man. A very dead man. A very murdered man. And Harry's penknife sticks out of his body. Harry flees in panic to Stockholm. And now not only the bad guys are close on his heels - but also the police...",
+          "popularity": 0.494,
+          "poster_path": "/a0ymZ8WfhjarZMAHieJFCcC8bPa.jpg",
+          "release_date": "1991-08-02",
+          "title": "Who Framed Harry Lund?",
+          "video": false,
+          "vote_average": 6.143,
+          "vote_count": 14
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/vqLb69dcsxT3Cai066XQzcUPsCP.jpg",
+          "genre_ids": [
+              35,
+              18,
+              10749
+          ],
+          "id": 441906,
+          "original_language": "hi",
+          "original_title": "जब हैरी मेट सेजल",
+          "overview": "Haunted by the memories of home he once knew, a middle-aged tour guide unconsciously embarks on a journey to find self.",
+          "popularity": 3.537,
+          "poster_path": "/yraJilUVLSd6BmQ4f1YtJGmcNkf.jpg",
+          "release_date": "2017-08-04",
+          "title": "Jab Harry Met Sejal",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 192
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/e2Ppz6IQcukpqyYYJsRkWcsGXvT.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 10152,
+          "original_language": "en",
+          "original_title": "Dumb and Dumberer: When Harry Met Lloyd",
+          "overview": "This wacky prequel to the 1994 blockbuster goes back to the lame-brained Harry and Lloyd's days as classmates at a Rhode Island high school, where the unprincipled principal puts the pair in remedial courses as part of a scheme to fleece the school.",
+          "popularity": 3.531,
+          "poster_path": "/qxD6P3UXASFCdbrVavceZzgOfI9.jpg",
+          "release_date": "2003-04-14",
+          "title": "Dumb and Dumberer: When Harry Met Lloyd",
+          "video": false,
+          "vote_average": 4.1,
+          "vote_count": 844
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/fugEIbmzcG9lDTSF2lJoURoUL4E.jpg",
+          "genre_ids": [
+              35,
+              80
+          ],
+          "id": 24693,
+          "original_language": "no",
+          "original_title": "Olsenbanden og Data-Harry sprenger verdensbanken",
+          "overview": "With the help of a corrupt diplomat the Olsen Gang plans to rob the World Bank, with help from the re-schooled Dynamite-Harry, now a computer expert.",
+          "popularity": 0.671,
+          "poster_path": "/uOqUwsozWzPhAwvbcEIRFiiqitw.jpg",
+          "release_date": "1978-09-18",
+          "title": "The Olsen Gang and Data-Harry Blows Up The World Bank",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 19
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/4LOxoeZWt5wr9mooxEZRFK96lDd.jpg",
+          "genre_ids": [
+              99
+          ],
+          "id": 483898,
+          "original_language": "en",
+          "original_title": "50 Greatest Harry Potter Moments",
+          "overview": "To mark the release two weeks ago of the eighth and final movie in the series, Robbie Coltrane narrates a countdown of the movie franchise's best moments. From Harry's first meeting with Ron and Hermione aboard the Hogwarts Express through to magical mysteries.",
+          "popularity": 3.533,
+          "poster_path": "/g1xiBoLD6v3ZaXPa4QtuXiQeYKW.jpg",
+          "release_date": "2011-07-27",
+          "title": "50 Greatest Harry Potter Moments",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 130
+      }
+  ],
+  "total_pages": 22,
+  "total_results": 435
+}

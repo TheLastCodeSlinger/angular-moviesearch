@@ -1,0 +1,420 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "backdrop_path": "/htmYEfH7TQgzsXHCnNXxmoYKQtL.jpg",
+          "id": 673,
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "original_title": "Harry Potter and the Prisoner of Azkaban",
+          "overview": "Year three at Hogwarts means new fun and challenges as Harry learns the delicate art of approaching a Hippogriff, transforming shape-shifting Boggarts into hilarity and even turning back time. But the term also brings danger: soul-sucking Dementors hover over the school, an ally of the accursed He-Who-Cannot-Be-Named lurks within the castle walls, and fearsome wizard Sirius Black escapes Azkaban. And Harry will confront them all.",
+          "poster_path": "/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 4.355,
+          "release_date": "2004-05-31",
+          "video": false,
+          "vote_average": 8.011,
+          "vote_count": 21970
+      },
+      {
+          "backdrop_path": "/5rrGVmRUuCKVbqUu41XIWTXJmNA.jpg",
+          "id": 674,
+          "title": "Harry Potter and the Goblet of Fire",
+          "original_title": "Harry Potter and the Goblet of Fire",
+          "overview": "When Harry Potter's name emerges from the Goblet of Fire, he becomes a competitor in a grueling battle for glory among three wizarding schools—the Triwizard Tournament. But since Harry never submitted his name for the Tournament, who did? Now Harry must confront a deadly dragon, fierce water demons and an enchanted maze only to find himself in the cruel grasp of He Who Must Not Be Named.",
+          "poster_path": "/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 4.344,
+          "release_date": "2005-11-16",
+          "video": false,
+          "vote_average": 7.802,
+          "vote_count": 21051
+      },
+      {
+          "backdrop_path": "/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
+          "id": 671,
+          "title": "Harry Potter and the Philosopher's Stone",
+          "original_title": "Harry Potter and the Philosopher's Stone",
+          "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+          "poster_path": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 3.626,
+          "release_date": "2001-11-16",
+          "video": false,
+          "vote_average": 7.902,
+          "vote_count": 28031
+      },
+      {
+          "backdrop_path": "/urDWNffjwmNi5IQaezw9GwqkUXa.jpg",
+          "id": 767,
+          "title": "Harry Potter and the Half-Blood Prince",
+          "original_title": "Harry Potter and the Half-Blood Prince",
+          "overview": "As Lord Voldemort tightens his grip on both the Muggle and wizarding worlds, Hogwarts is no longer a safe haven. Harry suspects perils may even lie within the castle, but Dumbledore is more intent upon preparing him for the final battle fast approaching. Together they work to find the key to unlock Voldemorts defenses and to this end, Dumbledore recruits his old friend and colleague Horace Slughorn, whom he believes holds crucial information. Even as the decisive showdown looms, romance blossoms for Harry, Ron, Hermione and their classmates. Love is in the air, but danger lies ahead and Hogwarts may never be the same again.",
+          "poster_path": "/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 4.357,
+          "release_date": "2009-07-15",
+          "video": false,
+          "vote_average": 7.684,
+          "vote_count": 19756
+      },
+      {
+          "backdrop_path": "/82a7AGF081PzFfoM8GAVGMvZNYK.jpg",
+          "id": 675,
+          "title": "Harry Potter and the Order of the Phoenix",
+          "original_title": "Harry Potter and the Order of the Phoenix",
+          "overview": "Returning for his fifth year of study at Hogwarts, Harry is stunned to find that his warnings about the return of Lord Voldemort have been ignored. Left with no choice, Harry takes matters into his own hands, training a small group of students to defend themselves against the dark arts.",
+          "poster_path": "/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 4.347,
+          "release_date": "2007-07-08",
+          "video": false,
+          "vote_average": 7.675,
+          "vote_count": 19767
+      },
+      {
+          "backdrop_path": "/vBV2nF3yqYrskq2y1bSSuAuGqcz.jpg",
+          "id": 14869,
+          "title": "G.I. Joe: The Rise of Cobra",
+          "original_title": "G.I. Joe: The Rise of Cobra",
+          "overview": "From the Egyptian desert to deep below the polar ice caps, the elite G.I. JOE team uses the latest in next-generation spy and military equipment to fight the corrupt arms dealer Destro and the growing threat of the mysterious Cobra organization to prevent them from plunging the world into chaos.",
+          "poster_path": "/wEr0FAAKPjlZ63i2WuuB2ge8OWv.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              28,
+              53,
+              878
+          ],
+          "popularity": 4.152,
+          "release_date": "2009-08-03",
+          "video": false,
+          "vote_average": 5.776,
+          "vote_count": 4658
+      },
+      {
+          "backdrop_path": "/AqLcLsGGTzAjm3pCCq0CZCQrp6m.jpg",
+          "id": 12444,
+          "title": "Harry Potter and the Deathly Hallows: Part 1",
+          "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+          "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+          "poster_path": "/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14
+          ],
+          "popularity": 4.394,
+          "release_date": "2010-11-17",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 19368
+      },
+      {
+          "backdrop_path": "/n5A7brJCjejceZmHyujwUTVgQNC.jpg",
+          "id": 12445,
+          "title": "Harry Potter and the Deathly Hallows: Part 2",
+          "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+          "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+          "poster_path": "/c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              14,
+              12
+          ],
+          "popularity": 4.103,
+          "release_date": "2011-07-12",
+          "video": false,
+          "vote_average": 8.088,
+          "vote_count": 20888
+      },
+      {
+          "backdrop_path": "/lxCUDgZ54myV7goBrkpFoHRt9Ms.jpg",
+          "id": 64688,
+          "title": "21 Jump Street",
+          "original_title": "21 Jump Street",
+          "overview": "When cops Schmidt and Jenko join the secret Jump Street unit, they use their youthful appearances to go undercover as high school students. They trade in their guns and badges for backpacks, and set out to shut down a dangerous drug ring. But, as time goes on, Schmidt and Jenko discover that high school is nothing like it was just a few years earlier -- and, what's more, they must again confront the teenage terror and anxiety they thought they had left behind.",
+          "poster_path": "/8v3Sqv9UcIUC4ebmpKWROqPBINZ.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              28,
+              35,
+              80
+          ],
+          "popularity": 4.121,
+          "release_date": "2012-03-14",
+          "video": false,
+          "vote_average": 6.879,
+          "vote_count": 10394
+      },
+      {
+          "backdrop_path": "/a6MwSrIKmMjs5b8os7eEgQk05yx.jpg",
+          "id": 36657,
+          "title": "X-Men",
+          "original_title": "X-Men",
+          "overview": "Two mutants, Rogue and Wolverine, come to a private academy for their kind whose resident superhero team, the X-Men, must oppose a terrorist organization with similar powers.",
+          "poster_path": "/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              28,
+              878
+          ],
+          "popularity": 0.164,
+          "release_date": "2000-07-13",
+          "video": false,
+          "vote_average": 7.001,
+          "vote_count": 11507
+      },
+      {
+          "backdrop_path": "/1uQSh7P3k0oRbRf0vH8GVt4thpP.jpg",
+          "id": 1894,
+          "title": "Star Wars: Episode II - Attack of the Clones",
+          "original_title": "Star Wars: Episode II - Attack of the Clones",
+          "overview": "Following an assassination attempt on Senator Padmé Amidala, Jedi Knights Anakin Skywalker and Obi-Wan Kenobi investigate a mysterious plot that could change the galaxy forever.",
+          "poster_path": "/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              28,
+              878
+          ],
+          "popularity": 2.74,
+          "release_date": "2002-05-15",
+          "video": false,
+          "vote_average": 6.571,
+          "vote_count": 13452
+      },
+      {
+          "backdrop_path": "/8Qsr8pvDL3s1jNZQ4HK1d1Xlvnh.jpg",
+          "id": 259316,
+          "title": "Fantastic Beasts and Where to Find Them",
+          "original_title": "Fantastic Beasts and Where to Find Them",
+          "overview": "In 1926, Newt Scamander arrives at the Magical Congress of the United States of America with a magically expanded briefcase, which houses a number of dangerous creatures and their habitats. When the creatures escape from the briefcase, it sends the American wizarding authorities after Newt, and threatens to strain even further the state of magical and non-magical relations.",
+          "poster_path": "/h6NYfVUyM6CDURtZSnBpz647Ldd.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              14,
+              12
+          ],
+          "popularity": 3.896,
+          "release_date": "2016-11-16",
+          "video": false,
+          "vote_average": 7.317,
+          "vote_count": 18961
+      },
+      {
+          "backdrop_path": "/jfEOzpsjc6JDlKhUHb4toWQPt.jpg",
+          "id": 121,
+          "title": "The Lord of the Rings: The Two Towers",
+          "original_title": "The Lord of the Rings: The Two Towers",
+          "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+          "poster_path": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14,
+              28
+          ],
+          "popularity": 4.725,
+          "release_date": "2002-12-18",
+          "video": false,
+          "vote_average": 8.4,
+          "vote_count": 22351
+      },
+      {
+          "backdrop_path": "/8pwIhymsxfAVjrAE7syDjQULn37.jpg",
+          "id": 425,
+          "title": "Ice Age",
+          "original_title": "Ice Age",
+          "overview": "With the impending ice age almost upon them, a mismatched trio of prehistoric critters – Manny the woolly mammoth, Diego the saber-toothed tiger and Sid the giant sloth – find an orphaned infant and decide to return it to its human parents. Along the way, the unlikely allies become friends but, when enemies attack, their quest takes on far nobler aims.",
+          "poster_path": "/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              16,
+              35,
+              10751,
+              12
+          ],
+          "popularity": 3.838,
+          "release_date": "2002-03-10",
+          "video": false,
+          "vote_average": 7.4,
+          "vote_count": 13484
+      },
+      {
+          "backdrop_path": "/qJzloL8O9YHhiWBrhlPfKAtZu2I.jpg",
+          "id": 557,
+          "title": "Spider-Man",
+          "original_title": "Spider-Man",
+          "overview": "After being bitten by a genetically altered spider at Oscorp, nerdy but endearing high school student Peter Parker is endowed with amazing powers to become the superhero known as Spider-Man.",
+          "poster_path": "/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              28,
+              878
+          ],
+          "popularity": 4.992,
+          "release_date": "2002-05-01",
+          "video": false,
+          "vote_average": 7.304,
+          "vote_count": 19428
+      },
+      {
+          "backdrop_path": "/kJaRWmy1BGq3pHyE94LOTteiHer.jpg",
+          "id": 2501,
+          "title": "The Bourne Identity",
+          "original_title": "The Bourne Identity",
+          "overview": "Wounded to the brink of death and suffering from amnesia, Jason Bourne is rescued at sea by a fisherman. With nothing to go on but a Swiss bank account number, he starts to reconstruct his life, but finds that many people he encounters want him dead. However, Bourne realizes that he has the combat and mental skills of a world-class spy—but who does he work for?",
+          "poster_path": "/aP8swke3gmowbkfZ6lmNidu0y9p.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              28,
+              18,
+              9648,
+              53
+          ],
+          "popularity": 4.663,
+          "release_date": "2002-06-14",
+          "video": false,
+          "vote_average": 7.466,
+          "vote_count": 9416
+      },
+      {
+          "backdrop_path": "/hfdds27YL5nTAhiOtjfNNxD3bJe.jpg",
+          "id": 80321,
+          "title": "Madagascar 3: Europe's Most Wanted",
+          "original_title": "Madagascar 3: Europe's Most Wanted",
+          "overview": "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They are forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When French animal-control officer Capitaine Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus.",
+          "poster_path": "/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              16,
+              10751,
+              35,
+              12
+          ],
+          "popularity": 3.583,
+          "release_date": "2012-06-06",
+          "video": false,
+          "vote_average": 6.607,
+          "vote_count": 6223
+      },
+      {
+          "backdrop_path": "/eCynaAOgYYiw5yN5lBwz3IxqvaW.jpg",
+          "id": 12,
+          "title": "Finding Nemo",
+          "original_title": "Finding Nemo",
+          "overview": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.",
+          "poster_path": "/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              16,
+              10751
+          ],
+          "popularity": 3.832,
+          "release_date": "2003-05-30",
+          "video": false,
+          "vote_average": 7.817,
+          "vote_count": 19525
+      },
+      {
+          "backdrop_path": "/wW7Wt5bXzPy4VOEE4LTIUDyDgBo.jpg",
+          "id": 22,
+          "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "original_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "overview": "After Port Royal is attacked and pillaged by a mysterious pirate crew, capturing the governor's daughter Elizabeth Swann in the process, William Turner asks free-willing pirate Jack Sparrow to help him locate the crew's ship—The Black Pearl—so that he can rescue the woman he loves.",
+          "poster_path": "/z8onk7LV9Mmw6zKz4hT6pzzvmvl.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [
+              12,
+              14,
+              28
+          ],
+          "popularity": 4.418,
+          "release_date": "2003-07-09",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 20975
+      },
+      {
+          "backdrop_path": "/oZKQWDz6wP1bLZgPKwpcloU34sx.jpg",
+          "id": 978870,
+          "title": "Last Night of Amore",
+          "original_title": "L'ultima notte di Amore",
+          "overview": "On the night before his retirement, police lieutenant Franco Amore is called to investigate the death of a long-time partner of his in a diamond heist in which he was involved.",
+          "poster_path": "/yKxmEfFrLjPLutpi7alffLOwMSj.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "it",
+          "genre_ids": [
+              53,
+              80
+          ],
+          "popularity": 3.566,
+          "release_date": "2023-03-09",
+          "video": false,
+          "vote_average": 7.2,
+          "vote_count": 485
+      }
+  ],
+  "total_pages": 2,
+  "total_results": 40
+}
