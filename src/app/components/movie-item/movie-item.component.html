@@ -1,0 +1,14 @@
+<a
+  class="shadow-2xl inline-block rounded-xl transition-transform duration-300 hover:-translate-y-2 hover:scale-105"
+  [routerLink]="'/Movie/' + movieItem?.title + '/' + movieItem?.id"
+>
+  <img
+    class="rounded-t-xl shadow-2xl"
+    [src]="'https://image.tmdb.org/t/p/w342/' + movieItem?.poster_path"
+    [alt]="movieItem?.title"
+  />
+  <div class="flex flex-col items-center">
+    <p>{{ movieItem?.title }}</p>
+    <p>{{ movieItem?.vote_average }}</p>
+  </div>
+</a>
