@@ -1,0 +1,27 @@
+<img src="assets/images/IMDb_Logo_Alt_Square_Black.png" alt="imdb logo" />
+<div class="border-r-1">
+  <h2 class="font-bold mt-2 py-2 bg-gray-300 text-xl text-center">DISCOVER</h2>
+  @for (category of categories; track category.appKey) {
+    <nav class="flex">
+      <a
+        (click)="genreService.setActiveDiscovery(category)"
+        [routerLink]="'/Discover/' + category.displayName"
+        class="w-full mx-2 my-1 border-1 rounded-2xl text-center hover:bg-gray-300 hover:cursor-pointer"
+      >
+        {{ category.displayName }}
+      </a>
+    </nav>
+  }
+  <h2 class="font-bold mt-2 py-2 bg-gray-300 text-xl text-center">GENRES</h2>
+  @for (genre of genreService.genreList$(); track genre.id) {
+    <nav class="flex">
+      <a
+        (click)="genreService.setActiveGenre(genre)"
+        [routerLink]="'/Genre/' + genre.name"
+        class="w-full mx-2 my-1 border-1 rounded-2xl text-center hover:bg-gray-300 hover:cursor-pointer"
+      >
+        {{ genre.name }}
+      </a>
+    </nav>
+  }
+</div>
