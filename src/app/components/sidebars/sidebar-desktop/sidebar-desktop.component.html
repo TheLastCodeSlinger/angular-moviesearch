@@ -1,14 +1,14 @@
 <img src="assets/images/IMDb_Logo_Alt_Square_Black.png" alt="imdb logo" />
 <div class="border-r-1">
   <h2 class="font-bold mt-2 py-2 bg-gray-300 text-xl text-center">DISCOVER</h2>
-  @for (category of categories; track category.appKey) {
+  @for (category of categories; track category.id) {
     <nav class="flex">
       <a
-        (click)="genreService.setActiveDiscovery(category)"
-        [routerLink]="'/Discover/' + category.displayName"
+        (click)="setCategory(category, 'discover')"
+        [routerLink]="'/Discover/' + category.name"
         class="w-full mx-2 my-1 border-1 rounded-2xl text-center hover:bg-gray-300 hover:cursor-pointer"
       >
-        {{ category.displayName }}
+        {{ category.name }}
       </a>
     </nav>
   }
@@ -16,7 +16,7 @@
   @for (genre of genreService.genreList$(); track genre.id) {
     <nav class="flex">
       <a
-        (click)="genreService.setActiveGenre(genre)"
+        (click)="setCategory(genre, 'genre')"
         [routerLink]="'/Genre/' + genre.name"
         class="w-full mx-2 my-1 border-1 rounded-2xl text-center hover:bg-gray-300 hover:cursor-pointer"
       >

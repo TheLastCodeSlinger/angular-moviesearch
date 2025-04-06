@@ -1,7 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { categories } from '../../../types/api-types';
+import { categories, CategoryType, Genre } from '../../../types/api-types';
 import { RouterLink } from '@angular/router';
 import { GenreListService } from '../../../services/genreList.service';
+import { DiscoverGenre } from '../../../types/app-types';
 
 @Component({
   selector: 'app-sidebar-desktop',
@@ -16,5 +17,9 @@ export class SidebarDesktopComponent implements OnInit {
 
   ngOnInit(): void {
     this.genreService.fetchGenreList();
+  }
+
+  setCategory(categoryItem: Genre | CategoryType, type: DiscoverGenre) {
+    this.genreService.setActiveCategory(categoryItem, type);
   }
 }

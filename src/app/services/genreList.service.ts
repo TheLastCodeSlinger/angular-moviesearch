@@ -1,6 +1,7 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { ApiService } from './api.service';
 import { CategoryEnum, CategoryType, Genre } from '../types/api-types';
+import { DiscoverGenre } from '../types/app-types';
 
 @Injectable({
   providedIn: 'root',
@@ -10,13 +11,15 @@ export class GenreListService {
 
   private genreList = signal<Genre[]>([]);
   public genreList$ = this.genreList.asReadonly();
-  private activeGenre = signal<Genre>({ id: 999999, name: '' });
-  public activeGenre$ = this.activeGenre.asReadonly();
-  private activeDiscovery = signal<CategoryType>({
-    appKey: CategoryEnum.POPULAR,
-    displayName: 'Popular',
+
+  private activeCategory = signal<
+    (CategoryType | Genre) & { type: DiscoverGenre }
+  >({
+    id: CategoryEnum.POPULAR,
+    name: 'Popular',
+    type: 'discover',
   });
-  public activeDiscovery$ = this.activeDiscovery.asReadonly();
+  public activeCategory$ = this.activeCategory.asReadonly();
 
   fetchGenreList() {
     this.api.getGenreList().subscribe({
@@ -28,18 +31,11 @@ export class GenreListService {
       },
     });
   }
-
-  setActiveGenre(genreItem: Genre) {
-    console.log(genreItem);
-
-    this.activeGenre.set(genreItem);
-    this.activeDiscovery.set({ appKey: CategoryEnum.NONE, displayName: '' });
-  }
-
-  setActiveDiscovery(discoveryItem: CategoryType) {
-    console.log(discoveryItem);
-
-    this.activeDiscovery.set(discoveryItem);
-    this.activeGenre.set({ id: 999999, name: '' });
+  setActiveCategory(categoryItem: Genre | CategoryType, type: DiscoverGenre) {
+    this.activeCategory.set({
+      id: categoryItem.id,
+      name: categoryItem.name,
+      type,
+    });
   }
 }

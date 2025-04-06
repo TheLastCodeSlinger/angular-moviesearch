@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
-import { DiscoveryComponent } from './pages/discovery/discovery.component';
-import { GenreComponent } from './pages/genre/genre.component';
+import { MoviesComponent } from './pages/movies/movies.component';
 
 export const routes: Routes = [
   {
     path: 'Discover/Now Playing',
-    loadComponent: () => DiscoveryComponent,
+    loadComponent: () => MoviesComponent,
   },
   {
     path: 'Discover/Upcoming',
-    loadComponent: () => DiscoveryComponent,
+    loadComponent: () => MoviesComponent,
   },
   {
     path: 'Discover/Popular',
-    loadComponent: () => DiscoveryComponent,
+    loadComponent: () => MoviesComponent,
   },
   {
     path: 'Discover/Top Rated',
-    loadComponent: () => DiscoveryComponent,
+    loadComponent: () => MoviesComponent,
   },
-  { path: 'Genre/:name', loadComponent: () => GenreComponent },
+  { path: 'Genre/:name', loadComponent: () => MoviesComponent },
   { path: 'Movie/:title/:id', loadComponent: () => MovieDetailsComponent },
 ];
 

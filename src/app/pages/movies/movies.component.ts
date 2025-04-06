@@ -4,20 +4,21 @@ import { MovieListService } from '../../services/movieList.service';
 import { MovieListComponent } from '../../components/movieList/movie-list.component';
 
 @Component({
-  selector: 'app-genre',
+  selector: 'app-movies',
   imports: [MovieListComponent],
-  templateUrl: './genre.component.html',
+  templateUrl: './movies.component.html',
+  standalone: true,
 })
-export class GenreComponent {
+export class MoviesComponent {
   movieService = inject(MovieListService);
   genreService = inject(GenreListService);
 
   constructor() {
     effect(() => {
-      const discoveryItem = this.genreService.activeGenre$();
+      const categoryItem = this.genreService.activeCategory$();
       // Prevent rerender if item didn't change
-      if (discoveryItem) {
-        this.movieService.fetchGenre(discoveryItem);
+      if (categoryItem) {
+        this.movieService.fetchMovies(categoryItem);
       }
     });
   }

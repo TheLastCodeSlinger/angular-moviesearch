@@ -7,26 +7,26 @@ export enum CategoryEnum {
 }
 
 export interface CategoryType {
-  displayName: string;
-  appKey: CategoryEnum;
+  name: string;
+  id: CategoryEnum;
 }
 
 export const categories = [
   {
-    displayName: 'Top Rated',
-    appKey: CategoryEnum.TOP_RATED,
+    name: 'Top Rated',
+    id: CategoryEnum.TOP_RATED,
   },
   {
-    displayName: 'Popular',
-    appKey: CategoryEnum.POPULAR,
+    name: 'Popular',
+    id: CategoryEnum.POPULAR,
   },
   {
-    displayName: 'Upcoming',
-    appKey: CategoryEnum.UPCOMING,
+    name: 'Upcoming',
+    id: CategoryEnum.UPCOMING,
   },
   {
-    displayName: 'Now Playing',
-    appKey: CategoryEnum.NOW_PLAYING,
+    name: 'Now Playing',
+    id: CategoryEnum.NOW_PLAYING,
   },
 ];
 

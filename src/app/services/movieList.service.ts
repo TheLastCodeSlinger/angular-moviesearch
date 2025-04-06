@@ -1,6 +1,12 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { ApiService } from './api.service';
-import { CategoryType, Genre, MovieBase } from '../types/api-types';
+import {
+  CategoryEnum,
+  CategoryType,
+  Genre,
+  MovieBase,
+} from '../types/api-types';
+import { DiscoverGenre } from '../types/app-types';
 
 @Injectable({
   providedIn: 'root',
@@ -12,21 +18,24 @@ export class MovieListService {
   private currentMovieList = signal<MovieBase[]>([]);
   public currentMovieList$ = this.currentMovieList.asReadonly();
 
-  fetchDiscovery(discoveryItem: CategoryType) {
-    this.api.getDiscoverByCategory(1, discoveryItem.appKey).subscribe({
-      next: (res) => {
-        // TODO: hier sollte das gesamte objekt für pagination benutzt werden
-        this.currentMovieList.set(res.results);
-      },
-    });
-  }
-
-  fetchGenre(genreItem: Genre) {
+  fetchMovies(categoryItem: (Genre | CategoryType) & { type: DiscoverGenre }) {
+    if (categoryItem.type === 'discover') {
+      return this.api
+        .getDiscoverByCategory(1, categoryItem.id as CategoryEnum)
+        .subscribe({
+          next: (res) => {
+            // TODO: hier sollte das gesamte objekt für pagination benutzt werden
+            this.currentMovieList.set(res.results);
+          },
+        });
+    }
     // TODO: page dynamisch + sorting zum enum machen
-    this.api.getGenreById(1, genreItem.id, 'popularity_desc').subscribe({
-      next: (res) => {
-        this.currentMovieList.set(res.results);
-      },
-    });
+    return this.api
+      .getGenreById(1, categoryItem.id as number, 'popularity_desc')
+      .subscribe({
+        next: (res) => {
+          this.currentMovieList.set(res.results);
+        },
+      });
   }
 }
