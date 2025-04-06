@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviesComponent } from './pages/movies/movies.component';
+import { MoviedetailsComponent } from './pages/moviedetails/moviedetails.component';
 
 export const routes: Routes = [
   {
@@ -21,7 +21,7 @@ export const routes: Routes = [
     loadComponent: () => MoviesComponent,
   },
   { path: 'Genre/:name', loadComponent: () => MoviesComponent },
-  { path: 'Movie/:title/:id', loadComponent: () => MovieDetailsComponent },
+  { path: 'Movie/:title/:id', loadComponent: () => MoviedetailsComponent },
 ];
 
 @NgModule({
