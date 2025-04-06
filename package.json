@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "eslint . --ext .ts,.html --fix",
-    "lint:watch": "chokidar 'src/**/*.{ts,html}' -c 'npm run lint'"
+    "lint:watch": "npx chokidar 'src/**/*.{ts,html}' -c 'npm run lint'"
   },
   "private": true,
   "dependencies": {
