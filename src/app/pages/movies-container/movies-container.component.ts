@@ -6,10 +6,10 @@ import { MovieListComponent } from '@/components/movie-list/movie-list.component
 @Component({
   selector: 'app-movies',
   imports: [MovieListComponent],
-  templateUrl: './movies.component.html',
+  templateUrl: './movies-container.component.html',
   standalone: true,
 })
-export class MoviesComponent {
+export class MoviesContainerComponent {
   movieService = inject(MovieListService);
   genreService = inject(GenreListService);
 

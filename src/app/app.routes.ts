@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MoviesComponent } from '@/pages/movies/movies.component';
+import { MoviesContainerComponent } from '~/app/pages/movies-container/movies-container.component';
 import { MovieDetailsContainerComponent } from '@/pages/movie-details-container/movie-details-container.component';
 
 export const routes: Routes = [
   {
     path: 'Discover/:name',
-    loadComponent: () => MoviesComponent,
+    loadComponent: () => MoviesContainerComponent,
   },
-  { path: 'Genre/:name', loadComponent: () => MoviesComponent },
+  { path: 'Genre/:name', loadComponent: () => MoviesContainerComponent },
   {
     path: 'Movie/:title/:id',
     loadComponent: () => MovieDetailsContainerComponent,
