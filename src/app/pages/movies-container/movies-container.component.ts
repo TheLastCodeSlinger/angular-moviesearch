@@ -21,6 +21,18 @@ export class MoviesContainerComponent implements AfterViewInit, OnDestroy {
 
   page = 0;
 
+  constructor() {
+    effect(() => {
+      // If category changed, navigate back to page 1
+      // effect runs before afterViewInit so check for 0 page for sideeffects like double fetch
+      const categoryItem = this.genreService.activeCategory$();
+      if (categoryItem && this.page !== 0) {
+        this.movieService.fetchMovies(categoryItem, 1, true);
+        this.page = 0;
+      }
+    });
+  }
+
   ngAfterViewInit(): void {
     // Observer is bound to html-element => afterViewInit guarantees it is there
     this.observer = new IntersectionObserver(([entry]) => {
@@ -31,17 +43,6 @@ export class MoviesContainerComponent implements AfterViewInit, OnDestroy {
       }
     });
     this.observer.observe(this.scrollTarget.nativeElement);
-  }
-
-  constructor() {
-    effect(() => {
-      // If category changed, navigate back to page 1
-      const categoryItem = this.genreService.activeCategory$();
-      if (categoryItem) {
-        this.movieService.fetchMovies(categoryItem, 1);
-        this.page = 0;
-      }
-    });
   }
 
   ngOnDestroy(): void {

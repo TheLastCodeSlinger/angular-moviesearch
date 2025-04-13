@@ -1,6 +1,12 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { ApiService } from './api.service';
-import { CategoryEnum, CategoryType, Genre, MovieBase } from '@/types/api-types';
+import {
+  CategoryEnum,
+  CategoryType,
+  Genre,
+  NowPlayingUpcomingApiResponse,
+  PopularTopRatedApiResponse,
+} from '@/types/api-types';
 import { DiscoverGenre } from '@/types/app-types';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -12,24 +18,43 @@ export class MovieListService {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
 
-  // TODO: check ob 2 listen für genre/discovery oder doch nur 1
-  private currentMovieList = signal<MovieBase[]>([]);
+  private currentMovieList = signal<PopularTopRatedApiResponse | NowPlayingUpcomingApiResponse>({
+    page: 1,
+    total_pages: 0,
+    total_results: 0,
+    results: [],
+  });
   public currentMovieList$ = this.currentMovieList.asReadonly();
 
-  fetchMovies(categoryItem: (Genre | CategoryType) & { type: DiscoverGenre }, page: number) {
+  // TODO: maybe in 2 functions auslagern
+  fetchMovies(categoryItem: (Genre | CategoryType) & { type: DiscoverGenre }, page: number, reset?: boolean) {
     if (categoryItem.type === 'discover') {
-      this.router.navigate([], { relativeTo: this.route, queryParams: { page: page } });
       return this.api.getDiscoverByCategory(page, categoryItem.id as CategoryEnum).subscribe({
         next: (res) => {
-          // TODO: hier sollte das gesamte objekt für pagination benutzt werden
-          this.currentMovieList.set(res.results);
+          if (reset) {
+            this.currentMovieList.set(res);
+          } else {
+            this.currentMovieList.update((movieData) => {
+              movieData.results = [...this.currentMovieList$().results, ...res.results];
+              return movieData;
+            });
+          }
+          this.router.navigate([], { relativeTo: this.route, queryParams: { page: page } });
         },
       });
     }
     // TODO: page dynamisch + sorting zum enum machen
     return this.api.getGenreById(page, categoryItem.id as number, 'popularity_desc').subscribe({
       next: (res) => {
-        this.currentMovieList.set(res.results);
+        if (reset) {
+          this.currentMovieList.set(res);
+        } else {
+          this.currentMovieList.update((movieData) => {
+            movieData.results = [...this.currentMovieList$().results, ...res.results];
+            return movieData;
+          });
+        }
+        this.router.navigate([], { relativeTo: this.route, queryParams: { page: page } });
       },
     });
   }
