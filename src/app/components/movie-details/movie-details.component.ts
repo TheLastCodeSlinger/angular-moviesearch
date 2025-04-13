@@ -30,8 +30,6 @@ export class MovieDetailsComponent {
 
   getImageUrls(path: string | null | undefined) {
     // TODO: placeholder
-    return path
-      ? `url(https://image.tmdb.org/t/p/original/${path})`
-      : 'placeholder.jpg';
+    return path ? `url(https://image.tmdb.org/t/p/original/${path})` : 'placeholder.jpg';
   }
 }

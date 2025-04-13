@@ -12,9 +12,7 @@ export class GenreListService {
   private genreList = signal<Genre[]>([]);
   public genreList$ = this.genreList.asReadonly();
 
-  private activeCategory = signal<
-    (CategoryType | Genre) & { type: DiscoverGenre }
-  >({
+  private activeCategory = signal<(CategoryType | Genre) & { type: DiscoverGenre }>({
     id: CategoryEnum.POPULAR,
     name: 'Popular',
     type: 'discover',
