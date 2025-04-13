@@ -1,20 +1,20 @@
 import { HttpClient, HttpContext } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { environment } from '../../environments/environment';
+import { environment } from '~/environments/environment';
 import { TC_NO_LOADER } from '../interceptors/loading.interceptor';
-import popularMockData from '../mockData/popular.json';
-import topRatedMockData from '../mockData/top_rated.json';
-import searchHarryMockData from '../mockData/searchHarry.json';
-import danielRadcliffe from '../mockData/personDetail/Danie_Jacob_Radcliffe.json';
-import personalCredits from '../mockData/personDetail/MovieCredits.json';
-import genreList from '../mockData/genreList.json';
-import actionPage1 from '../mockData/actionGenre/action_page1.json';
-import actionPage2 from '../mockData/actionGenre/action_page2.json';
-import movieCredits from '../mockData/movieDetail/movieCredits.json';
-import movieTrailer from '../mockData/movieDetail/videos.json';
-import recommendations from '../mockData/movieDetail/recommendations.json';
-import generalData from '../mockData/movieDetail/allDetails.json';
+import popularMockData from '@/mockData/popular.json';
+import topRatedMockData from '@/mockData/top_rated.json';
+import searchHarryMockData from '@/mockData/searchHarry.json';
+import danielRadcliffe from '@/mockData/personDetail/Danie_Jacob_Radcliffe.json';
+import personalCredits from '@/mockData/personDetail/MovieCredits.json';
+import genreList from '@/mockData/genreList.json';
+import actionPage1 from '@/mockData/actionGenre/action_page1.json';
+import actionPage2 from '@/mockData/actionGenre/action_page2.json';
+import movieCredits from '@/mockData/movieDetail/movieCredits.json';
+import movieTrailer from '@/mockData/movieDetail/videos.json';
+import recommendations from '@/mockData/movieDetail/recommendations.json';
+import generalData from '@/mockData/movieDetail/allDetails.json';
 import {
   CategoryEnum,
   GenreResponse,

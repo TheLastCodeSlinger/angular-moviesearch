@@ -1,7 +1,7 @@
 import { Component, effect, inject } from '@angular/core';
-import { GenreListService } from '../../services/genreList.service';
-import { MovieListService } from '../../services/movieList.service';
-import { MovieListComponent } from '../../components/movieList/movie-list.component';
+import { GenreListService } from '@/services/genreList.service';
+import { MovieListService } from '@/services/movieList.service';
+import { MovieListComponent } from '@/components/movie-list/movie-list.component';
 
 @Component({
   selector: 'app-movies',

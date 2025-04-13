@@ -5,8 +5,8 @@ import {
   CategoryType,
   Genre,
   MovieBase,
-} from '../types/api-types';
-import { DiscoverGenre } from '../types/app-types';
+} from '@/types/api-types';
+import { DiscoverGenre } from '@/types/app-types';
 
 @Injectable({
   providedIn: 'root',

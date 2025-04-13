@@ -1,7 +1,7 @@
 import { Component, effect, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MovieDetailsService } from '../../services/movieDetails.service';
-import { MovieListComponent } from '../movieList/movie-list.component';
+import { MovieDetailsService } from '@/services/movieDetails.service';
+import { MovieListComponent } from '../movie-list/movie-list.component';
 
 @Component({
   selector: 'app-movie-details',

@@ -1,14 +1,13 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { categories, CategoryType, Genre } from '../../../types/api-types';
+import { categories, CategoryType, Genre } from '@/types/api-types';
 import { RouterLink } from '@angular/router';
-import { GenreListService } from '../../../services/genreList.service';
-import { DiscoverGenre } from '../../../types/app-types';
+import { GenreListService } from '@/services/genreList.service';
+import { DiscoverGenre } from '@/types/app-types';
 
 @Component({
   selector: 'app-sidebar-desktop',
   imports: [RouterLink],
   templateUrl: './sidebar-desktop.component.html',
-  styleUrl: './sidebar-desktop.component.css',
   standalone: true,
 })
 export class SidebarDesktopComponent implements OnInit {

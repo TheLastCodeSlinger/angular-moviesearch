@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ApiService } from './services/api.service';
+import { ApiService } from '@/services/api.service';
 import { Observable } from 'rxjs';
-import { SidebarDesktopComponent } from './components/sidebars/sidebar-desktop/sidebar-desktop.component';
+import { SidebarDesktopComponent } from '@/components/sidebars/sidebar-desktop/sidebar-desktop.component';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({

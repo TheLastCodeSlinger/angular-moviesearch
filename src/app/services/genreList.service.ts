@@ -1,7 +1,7 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { ApiService } from './api.service';
-import { CategoryEnum, CategoryType, Genre } from '../types/api-types';
-import { DiscoverGenre } from '../types/app-types';
+import { CategoryEnum, CategoryType, Genre } from '@/types/api-types';
+import { DiscoverGenre } from '@/types/app-types';
 
 @Injectable({
   providedIn: 'root',

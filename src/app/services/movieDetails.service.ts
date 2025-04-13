@@ -1,5 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { MovieBase, MovieDetailsResponse } from '../types/api-types';
+import { MovieBase, MovieDetailsResponse } from '@/types/api-types';
 import { ApiService } from './api.service';
 
 @Injectable({

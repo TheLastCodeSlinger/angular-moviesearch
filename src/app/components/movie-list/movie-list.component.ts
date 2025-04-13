@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MovieItemComponent } from '../movie-item/movie-item.component';
-import { MovieBase } from '../../types/api-types';
+import { MovieBase } from '@/types/api-types';
 
 @Component({
   selector: 'app-movie-list',
