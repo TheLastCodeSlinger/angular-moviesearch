@@ -1,1 +1,5 @@
-<app-movie-list [movieList]="movieService.currentMovieList$()"></app-movie-list>
+<app-movie-list
+  class="h-full overflow-y-auto"
+  [movieList]="movieService.currentMovieList$()"
+></app-movie-list>
+<div #infiniteScrollTarget class="h-[1px]"></div>

@@ -4,13 +4,10 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
 import { environment } from '~/environments/environment';
 import { TC_NO_LOADER } from '../interceptors/loading.interceptor';
 import popularMockData from '@/mockData/popular.json';
-import topRatedMockData from '@/mockData/top_rated.json';
 import searchHarryMockData from '@/mockData/searchHarry.json';
 import danielRadcliffe from '@/mockData/personDetail/Danie_Jacob_Radcliffe.json';
 import personalCredits from '@/mockData/personDetail/MovieCredits.json';
 import genreList from '@/mockData/genreList.json';
-import actionPage1 from '@/mockData/actionGenre/action_page1.json';
-import actionPage2 from '@/mockData/actionGenre/action_page2.json';
 import movieCredits from '@/mockData/movieDetail/movieCredits.json';
 import movieTrailer from '@/mockData/movieDetail/videos.json';
 import recommendations from '@/mockData/movieDetail/recommendations.json';
@@ -80,15 +77,11 @@ export class ApiService {
       },
     });
   }
-  getGenreById(
-    page: number,
-    genreId: number,
-    sortOption: string,
-  ): Observable<PopularTopRatedApiResponse> {
-    if (page === 2) {
-      return of(actionPage2);
-    }
-    return of(actionPage1);
+  getGenreById(page = 1, genreId: number, sortOption: string): Observable<PopularTopRatedApiResponse> {
+    // if (page === 2) {
+    //   return of(actionPage2);
+    // }
+    // return of(actionPage1);
     // TODO: mockdaten ausstellen oder durch env steuern
     return this.http.get<PopularTopRatedApiResponse>(path + '/discover/movie', {
       params: {
@@ -101,14 +94,12 @@ export class ApiService {
     });
   }
   getDiscoverByCategory(
-    page: number,
+    page = 1,
     category: CategoryEnum,
   ): Observable<PopularTopRatedApiResponse | NowPlayingUpcomingApiResponse> {
-    return of(topRatedMockData);
+    // return of(topRatedMockData);
     // TODO: mockdaten ausstellen oder durch env steuern
-    return this.http.get<
-      PopularTopRatedApiResponse | NowPlayingUpcomingApiResponse
-    >(path + '/movie/' + category, {
+    return this.http.get<PopularTopRatedApiResponse | NowPlayingUpcomingApiResponse>(path + '/movie/' + category, {
       params: {
         language: 'en-us',
         page,
@@ -117,10 +108,7 @@ export class ApiService {
     });
   }
 
-  getSearchResultByInput(
-    page: number,
-    input: string,
-  ): Observable<PopularTopRatedApiResponse> {
+  getSearchResultByInput(page: number, input: string): Observable<PopularTopRatedApiResponse> {
     return of(searchHarryMockData);
     // TODO: mockdaten ausstellen oder durch env steuern
     return this.http.get<PopularTopRatedApiResponse>(path + '/search/movie', {
@@ -133,9 +121,7 @@ export class ApiService {
     });
   }
 
-  getPersonDetailsByPersonId(
-    personId: number,
-  ): Observable<PersonDetailsResponse> {
+  getPersonDetailsByPersonId(personId: number): Observable<PersonDetailsResponse> {
     return of(danielRadcliffe);
     return this.http.get<PersonDetailsResponse>(path + '/person/' + personId, {
       params: {
@@ -145,19 +131,14 @@ export class ApiService {
     });
   }
 
-  getMovieCreditsByPersonId(
-    personId: number,
-  ): Observable<PersonCreditsResponse> {
+  getMovieCreditsByPersonId(personId: number): Observable<PersonCreditsResponse> {
     return of(personalCredits);
-    return this.http.get<PersonCreditsResponse>(
-      path + '/person/' + personId + '/movie_credits',
-      {
-        params: {
-          language: 'en-us',
-          api_key: apiKey,
-        },
+    return this.http.get<PersonCreditsResponse>(path + '/person/' + personId + '/movie_credits', {
+      params: {
+        language: 'en-us',
+        api_key: apiKey,
       },
-    );
+    });
   }
 
   getGenreList(): Observable<GenreResponse> {
@@ -170,9 +151,7 @@ export class ApiService {
     });
   }
 
-  getAllMovieDetailsByMovieId(
-    movieId: number,
-  ): Observable<MovieDetailsResponse> {
+  getAllMovieDetailsByMovieId(movieId: number): Observable<MovieDetailsResponse> {
     return of(generalData);
     return this.http.get<MovieDetailsResponse>(path + '/movie/' + movieId, {
       params: {
@@ -184,42 +163,31 @@ export class ApiService {
 
   getCastMembersByMovieId(movieId: number): Observable<MovieCreditsResponse> {
     return of(movieCredits);
-    return this.http.get<MovieCreditsResponse>(
-      path + '/movie/' + movieId + '/credits',
-      {
-        params: {
-          language: 'en-us',
-          api_key: apiKey,
-        },
+    return this.http.get<MovieCreditsResponse>(path + '/movie/' + movieId + '/credits', {
+      params: {
+        language: 'en-us',
+        api_key: apiKey,
       },
-    );
+    });
   }
 
-  getRecommendedMoviesByMovieId(
-    movieId: number,
-  ): Observable<PopularTopRatedApiResponse> {
+  getRecommendedMoviesByMovieId(movieId: number): Observable<PopularTopRatedApiResponse> {
     return of(recommendations);
-    return this.http.get<PopularTopRatedApiResponse>(
-      path + '/movie/' + movieId + '/recommendations',
-      {
-        params: {
-          language: 'en-us',
-          api_key: apiKey,
-        },
+    return this.http.get<PopularTopRatedApiResponse>(path + '/movie/' + movieId + '/recommendations', {
+      params: {
+        language: 'en-us',
+        api_key: apiKey,
       },
-    );
+    });
   }
 
   getTrailerDetailsByMovieId(movieId: number): Observable<VideoResponse> {
     return of(movieTrailer);
-    return this.http.get<VideoResponse>(
-      path + '/movie/' + movieId + '/videos',
-      {
-        params: {
-          language: 'en-us',
-          api_key: apiKey,
-        },
+    return this.http.get<VideoResponse>(path + '/movie/' + movieId + '/videos', {
+      params: {
+        language: 'en-us',
+        api_key: apiKey,
       },
-    );
+    });
   }
 }
