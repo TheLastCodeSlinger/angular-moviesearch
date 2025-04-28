@@ -1,5 +1,19 @@
-<app-movie-list
-  class="h-full overflow-y-auto"
-  [movieList]="movieService.currentMovieList$().results"
-></app-movie-list>
+<div class="w-full flex justify-between items-center mb-4">
+  <h2 class="text-3xl underline">{{ genreService.activeCategory$().name }}</h2>
+  @if (genreService.activeCategory$().type === "genre") {
+    <label class="font-bold"
+      >Sort By:
+      <select
+        [(ngModel)]="selectedOption"
+        class="text-right border-1 rounded-md"
+        (change)="fetchSortedMovies(selectedOption.value)"
+      >
+        @for (option of sortOptions; track $index) {
+          <option [ngValue]="option">{{ option.label }}</option>
+        }
+      </select></label
+    >
+  }
+</div>
+<app-movie-list class="h-full overflow-y-auto" [movieList]="movieService.currentMovieList$().results"></app-movie-list>
 <div #infiniteScrollTarget class="h-[1px]"></div>

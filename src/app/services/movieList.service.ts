@@ -1,6 +1,7 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { ApiService } from './api.service';
 import {
+  ApiParams,
   CategoryEnum,
   CategoryType,
   Genre,
@@ -25,26 +26,29 @@ export class MovieListService {
     results: [],
   });
   public currentMovieList$ = this.currentMovieList.asReadonly();
+  fetchDiscoveryMovies(categoryItem: (Genre | CategoryType) & { type: DiscoverGenre }, page: number, reset?: boolean) {
+    return this.api.getDiscoverByCategory(page, categoryItem.id as CategoryEnum).subscribe({
+      next: (res) => {
+        if (reset) {
+          this.currentMovieList.set(res);
+        } else {
+          this.currentMovieList.update((movieData) => {
+            movieData.results = [...this.currentMovieList$().results, ...res.results];
+            return movieData;
+          });
+        }
+        this.router.navigate([], { relativeTo: this.route, queryParams: { page: page } });
+      },
+    });
+  }
 
-  // TODO: maybe in 2 functions auslagern
-  fetchMovies(categoryItem: (Genre | CategoryType) & { type: DiscoverGenre }, page: number, reset?: boolean) {
-    if (categoryItem.type === 'discover') {
-      return this.api.getDiscoverByCategory(page, categoryItem.id as CategoryEnum).subscribe({
-        next: (res) => {
-          if (reset) {
-            this.currentMovieList.set(res);
-          } else {
-            this.currentMovieList.update((movieData) => {
-              movieData.results = [...this.currentMovieList$().results, ...res.results];
-              return movieData;
-            });
-          }
-          this.router.navigate([], { relativeTo: this.route, queryParams: { page: page } });
-        },
-      });
-    }
-    // TODO: page dynamisch + sorting zum enum machen
-    return this.api.getGenreById(page, categoryItem.id as number, 'popularity_desc').subscribe({
+  fetchGenreMovies(
+    categoryItem: (Genre | CategoryType) & { type: DiscoverGenre },
+    page: number,
+    sortBy: ApiParams['sortBy'],
+    reset?: boolean,
+  ) {
+    return this.api.getGenreById(page, categoryItem.id as number, sortBy).subscribe({
       next: (res) => {
         if (reset) {
           this.currentMovieList.set(res);

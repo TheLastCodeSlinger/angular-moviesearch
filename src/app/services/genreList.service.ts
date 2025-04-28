@@ -12,6 +12,7 @@ export class GenreListService {
   private genreList = signal<Genre[]>([]);
   public genreList$ = this.genreList.asReadonly();
 
+  // TODO: ist das der richtige ort? hatte probleme es zu finden
   private activeCategory = signal<(CategoryType | Genre) & { type: DiscoverGenre }>({
     id: CategoryEnum.POPULAR,
     name: 'Popular',
@@ -30,6 +31,8 @@ export class GenreListService {
     });
   }
   setActiveCategory(categoryItem: Genre | CategoryType, type: DiscoverGenre) {
+    // Prevent updating if same item got clicked
+    if (this.activeCategory$().id === categoryItem.id) return;
     this.activeCategory.set({
       id: categoryItem.id,
       name: categoryItem.name,

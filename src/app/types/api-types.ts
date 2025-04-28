@@ -214,3 +214,20 @@ export interface Video {
   published_at: string; // Date the video was published
   id: string; // The unique identifier for the video
 }
+
+export interface ApiParams {
+  sortBy:
+    | 'popularity.desc'
+    | 'popularity.asc'
+    | 'title.desc'
+    | 'title.asc'
+    | 'vote_average.desc'
+    | 'vote_average.asc'
+    | 'release_date.desc'
+    | 'revenue.desc'
+    | 'revenue.asc'
+    | 'primary_release_date.desc'
+    | 'primary_release_date.asc'
+    | 'vote_count.desc'
+    | 'vote_count.asc';
+}
